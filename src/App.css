@@ -1,0 +1,115 @@
+/* Galactic color variables */
+:root {
+  --primary-color: #007bff; /* Nebula blue */
+  --secondary-color: #ff4500; /* Pulsar red */
+  --gradient-start: #283e51; /* Deep space */
+  --gradient-end: #43617a; /* Dark void */
+}
+
+/* Universal Interface */
+.App {
+  text-align: center;
+  background: linear-gradient(to bottom right, var(--gradient-start), var(--gradient-end)); /* Galactic background */
+}
+
+body {
+  font-family: 'Roboto Mono', monospace; /* Techy font */
+  background-color: #121212;
+  color: #d3d3d3;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+/* Hyperspace Search */
+.search-bar input {
+  padding: 12px;
+  margin-top: 20px;
+  width: 70%;
+  max-width: 400px;
+  border: 1px solid #444;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+  color: #fff;
+}
+
+/* Commodity Containers */
+.rbord,
+.rbord-pro {
+  margin: 0 auto;
+  background-color: #222; /* Dark container */
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Display three columns */
+  gap: 20px;
+  justify-items: center; /* Center items horizontally */
+  align-items: start; /* Align items to the top */
+}
+
+/* Alien Artifacts */
+.product-card {
+  background-color: #333; /* Darker card */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Even deeper shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Even stronger hover shadow */
+}
+
+/* Product Details */
+.product-image-home {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #444;
+  border-radius: 15px 15px 0 0;
+}
+
+.product-title-home {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.product-price-home {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.product-description {
+  margin-bottom: 10px;
+  color: #aaa; /* Lighter text */
+}
+
+.product-rating {
+  color: #ffd700; /* Gold for rating */
+  margin-bottom: 10px;
+}
+
+/* Logout Button */
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border:
+}
